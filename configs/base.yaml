@@ -1,0 +1,20 @@
+model:
+  d_model: 64
+  n_layers: 2
+  n_heads: 4
+  d_ff: 128
+  pooling: mean
+  attn_mode: vanilla
+
+task:
+  type: classification
+  num_classes: 2
+
+training:
+  epochs: 7
+#  epochs: 10
+  lr: 0.0003
+  batch_size: 64
+
+device: mps
+#device: cpu

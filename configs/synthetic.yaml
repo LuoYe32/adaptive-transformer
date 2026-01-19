@@ -1,0 +1,15 @@
+data:
+  channels: 32
+  length: 512
+
+noise:
+  gaussian_sigma: [0.0, 0.1, 0.5]
+  poisson_lambda: [10, 30]
+
+missing:
+  fraction: [0.0, 0.1, 0.3, 0.5]
+  patterns: ["random", "block", "line"]
+
+generator:
+  n_samples: 10000
+  seed: 42
